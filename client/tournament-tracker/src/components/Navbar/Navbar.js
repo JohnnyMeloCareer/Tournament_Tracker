@@ -1,12 +1,15 @@
 import React from 'react'; 
 import { Link } from "react-router-dom";
-// import "./Navbar.css";
+import './Navbar.css';
 
 const Navbar = () => (
     <nav className = "navbar navbar-expand-ld navbar-dark">
-    <Link className = "navbar-brand" to = "/">
-          Charon
-    </Link> 
+    <ul class="nav">
+		<li><a href="index.html">Popular</a></li>
+		
+		<li><a href="contact.html">Search</a></li>
+	</ul>
+  
           </nav>
 )
 
