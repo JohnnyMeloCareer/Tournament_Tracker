@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
 import TournamentCards from './components/TournamentCards';
+import TournamentJoinButton from './components/TournamentJoinButton';
 
 
 const App = () => (
@@ -15,6 +16,7 @@ const App = () => (
     <Navbar />
     </Router >
     <TournamentCards />
+    <TournamentJoinButton />
   </div>
   )
 
