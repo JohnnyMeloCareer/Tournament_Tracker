@@ -8,9 +8,9 @@ import './Navbar.css';
 const Navbar = () => (
     <nav className = "navbar navbar-expand-ld navbar-dark">
     <ul class="nav">
-		<li><a href="index.html">Popular</a></li>
+		<li><a href="#">Popular</a></li>
 		
-		<li><a href="contact.html">Search</a></li>
+		<li><a href="#">Search</a></li>
 	</ul>
   
           </nav>
