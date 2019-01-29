@@ -6,19 +6,21 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
+// import SideNavbar from './components/SideNavbar';
 import TournamentCards from './components/TournamentCards';
-import TournamentJoinButton from './components/TournamentJoinButton';
+// import TournamentJoinButton from './components/TournamentJoinButton';
 
 
 const App = () => (
 <div>
 
     <Header />
+    {/* <SideNavbar /> */}
   <Router>
     <Navbar />
   </Router>
     <TournamentCards />
-    <TournamentJoinButton />
+    {/* <TournamentJoinButton /> */}
   </div>
   )
 

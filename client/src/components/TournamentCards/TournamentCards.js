@@ -15,7 +15,10 @@ const TournamentCards = () => {
           <Button color="info">Join</Button>
         </CardBody> 
       </Card>
+    
     </div>
+    
+    
   );
 };
 

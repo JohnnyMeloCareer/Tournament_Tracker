@@ -8,6 +8,8 @@ import './Navbar.css';
 const Navbar = () => (
     <nav className = "navbar navbar-expand-ld navbar-dark">
     <ul className="nav">
+		<li><a href="#">Profile</a></li>
+
 		<li><a href="#">Popular</a></li>
 		
 		<li><a href="#">Search</a></li>
