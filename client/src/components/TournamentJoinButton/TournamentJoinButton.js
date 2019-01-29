@@ -13,4 +13,4 @@ export default class Example extends React.Component {
   }
 }
 
-export default TournamentJoinButton;
+// export default TournamentJoinButton;
