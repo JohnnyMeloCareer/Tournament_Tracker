@@ -2,8 +2,9 @@
 
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import ProfilePage from "./pages/ProfilePage";
+import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
+import ProfilePage from "./pages/ProfilePage";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
@@ -17,6 +18,7 @@ const App = () => (
   <Switch>
     <Route exact path="/" component={LoginPage} />
     <Route exact path="/profile" component={ProfilePage} />
+    <Route exact path="/homepage" component={HomePage} />
     </Switch>
     </div>
     </Router>
