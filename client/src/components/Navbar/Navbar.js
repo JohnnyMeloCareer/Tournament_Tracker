@@ -1,5 +1,6 @@
 import React from 'react'; 
-//import { Link } from "react-router-dom";
+import { BrowserRoute as Router, Route, Link } from "react-router-dom";
+
 
 import './Navbar.css';
 
@@ -8,7 +9,9 @@ import './Navbar.css';
 const Navbar = () => (
     <nav className = "navbar navbar-expand-ld navbar-dark">
     <ul className="nav">
-		<li><a href="#">Profile</a></li>
+		<li>
+			<Link to="/ProfilePage">Profile</Link></li>
+			
 
 		<li><a href="#">Popular</a></li>
 		

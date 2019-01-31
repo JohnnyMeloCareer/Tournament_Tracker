@@ -5,7 +5,7 @@ const tournamentsSchema = new Schema({
     // Define the Schema of the tournament
     tournament_name: { type: String, require: true },
     team_name: { type: String},
-    total_user: { type: Number},
+    total_users: { type: Number},
     date: { type: Date, default: Date.now }
     
 })
