@@ -1,24 +1,24 @@
 import React from 'react';
-import { Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button } from 'reactstrap';
-  import './TournamentCards.css';
+import './TournamentCards.css';
+import { Card, CardImg, CardText, CardBody, CardLink,
+  CardTitle, CardSubtitle } from 'reactstrap';
 
 const TournamentCards = () => {
   return (
     <div>
-      <Card>
-         <CardImg top width="100%" src="https://cdn.wikimg.net/en/splatoonwiki/images/thumb/9/9a/Tournament_Leagues_Under_the_Ink.png/400px-Tournament_Leagues_Under_the_Ink.png" alt="Card image cap" />
+      <Card style={{backgroundColor: "white"}}>
         <CardBody>
-          <CardTitle>Splatoon 2</CardTitle>
-          <CardSubtitle>LUTI</CardSubtitle>
+          <CardTitle>Card title</CardTitle>
+          <CardSubtitle>Card subtitle</CardSubtitle>
+        </CardBody>
+        <img width="100%" src="https://cdn.wikimg.net/en/splatoonwiki/images/thumb/9/9a/Tournament_Leagues_Under_the_Ink.png/400px-Tournament_Leagues_Under_the_Ink.png" alt="Card image cap" />
+        <CardBody>
           <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-          <Button color="info">Join</Button>
-        </CardBody> 
+          <CardLink href="#">Card Link</CardLink>
+          <CardLink href="#">Another Link</CardLink>
+        </CardBody>
       </Card>
-    
     </div>
-    
-    
   );
 };
 
