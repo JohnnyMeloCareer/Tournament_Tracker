@@ -6,10 +6,10 @@ import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
 import ProfilePage from "./pages/ProfilePage";
 import "./App.css";
-import Navbar from "./components/Navbar";
-import Header from "./components/Header";
+// import Navbar from "./components/Navbar";
+// import Header from "./components/Header";
 // import SideNavbar from './components/SideNavbar';
-import TournamentCards from "./components/TournamentCards";
+// import TournamentCards from "./components/TournamentCards";
 // import TournamentJoinButton from './components/TournamentJoinButton';
 
 const App = () => (
@@ -27,13 +27,4 @@ const App = () => (
     
     export default App;
     
-    
-
-
-
-    //   <LoginPage
-    // //   updateUser={this.updateUser}
-    // // />} />
-    {/* <Header />
-      {/* <TournamentCards /> */}
-    // <Navbar />  <-- Put inside of the page you want to display these components */}
+  
