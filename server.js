@@ -1,20 +1,22 @@
 const express = require("express");
 const path = require("path");
 const routes = require("./routes");
-const bodyParser = require('body-parser');
-const morgan = require('morgan');
-const users = require('./routes/api/users');
-const db = require("./models");
+const mongoose = require("mongoose");
 const PORT = process.env.PORT || 3001;
 const app = express();
 
-// Middleware 
-
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
+
+app.use(routes);
+
+mongoose.connect(process.env.MONGOD_URI || 
+  "mongodb://localhost/ColosseumDB");
 
 // Send every request to the React app
 // Define any API routes before this runs
