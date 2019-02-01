@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 // import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 // import Container from "../components/Container";
-import { Container, Col, Form, FormGroup, Label, Input } from "reactstrap";
+import { Container, Col, Form, FormGroup, Label, Input, Button } from "reactstrap";
 // import Form from "../components/Form";
 // import { Redirect } from 'react-router-dom'
 // import axios from 'axios'
@@ -25,9 +25,10 @@ class LoginPage extends Component {
       <p class="logotop">Colosseum</p>
         <Form>
           <FormGroup row>
-            <Label for="exampleEmail" sm={2} size="lg">
+            {/* <Label for="exampleEmail" sm={2} size="lg">
               Username
-            </Label>
+            </Label> */}
+            <br></br>
             <Col sm={10}>
               <Input
                 type="email"
@@ -39,9 +40,10 @@ class LoginPage extends Component {
             </Col>
           </FormGroup>
           <FormGroup row>
-            <Label for="exampleEmail2" sm={2}>
+            {/* <Label for="exampleEmail2" sm={2}>
               Password
-            </Label>
+            </Label> */}
+            <br></br>
             <Col sm={10}>
               <Input
                 type="email"
@@ -49,6 +51,8 @@ class LoginPage extends Component {
                 id="exampleEmail2"
                 placeholder="Password"
               />
+              <br></br>
+              <Button color="primary" size="lg">Login</Button>{' '}
             </Col>
           </FormGroup>
         </Form>
